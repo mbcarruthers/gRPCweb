@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+html,body {
+  background-position:center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-color:#0093E9;
+  background-image:linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+/* gradient header text */
+.gradient-text {
+  background-image:-webkit-linear-gradient(238deg, #85FFBD 0%, #FFFB7D 100%);
+  /*background-color: #85FFBD;*/
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-weight:bolder;
+}
+
+.page {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+}
+
+
+/* list-group and list-items */
+.list-group-item {
+  background:transparent;
+  border:none;
+}
+.outline {
+  border-radius:11px;
+  border:1px solid mediumvioletred;
+}
