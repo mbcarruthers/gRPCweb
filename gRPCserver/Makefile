@@ -51,13 +51,20 @@ build_protoc: ## build proto files
 	--go-grpc_out=gRPCserver/proto \
 	--go-grpc_opt=module=github.com/mbcarruthers/gRPCserver gRPCserver/proto/gRPCserver.proto
 
-clean_protoc:
+clean_protoc: ## clean grpc generated Go files
 	rm $(project)/${PROTO_DIR}/*pb.go
+
+
+build_protoc_grpc_web: ## build grpc-web protoc files for the client-side. ../app/src/web is the build directory.
+	protoc \
+    	-IgRPCserver/proto gRPCserver/proto/gRPCserver.proto \
+    	--js_out=import_style=commonjs,binary:../app/src/web/ \
+    	--grpc-web_out=import_style=commonjs,mode=grpcwebtext:../app/src/web/
 
 build_server: ## Builds server in bin/gRPCserver
 	go build -o ${BIN_DIR}/$(project)/${SERVER_BIN} ./$(project)/${SERVER_DIR}
 
-build_client: ## Builds client in bin/gRPCserver
+build_client: ## Builds client in bin/gRPCserver. Note: Client is just for testing at the moment
 	go build -o ${BIN_DIR}/$(project)/${CLIENT_BIN} ./$(project)/${CLIENT_DIR}
 
 about: ## Display info related to the build
