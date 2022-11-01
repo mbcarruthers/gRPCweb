@@ -58,8 +58,11 @@ clean_protoc: ## clean grpc generated Go files
 build_protoc_grpc_web: ## build grpc-web protoc files for the client-side. ../app/src/web is the build directory.
 	protoc \
     	-IgRPCserver/proto gRPCserver/proto/gRPCserver.proto \
-    	--js_out=import_style=commonjs,binary:../app/src/web/ \
-    	--grpc-web_out=import_style=commonjs,mode=grpcwebtext:../app/src/web/
+    	--js_out=import_style=commonjs,binary:../app/src/Web/ \
+    	--grpc-web_out=import_style=commonjs,mode=grpcwebtext:../app/src/Web/
+
+clean_web_grpc_protoc: ## clean Web directory of proto files
+	rm ../app/src/Web/*
 
 build_server: ## Builds server in bin/gRPCserver
 	go build -o ${BIN_DIR}/$(project)/${SERVER_BIN} ./$(project)/${SERVER_DIR}

@@ -1,5 +1,10 @@
 .idea/
 /app/.idea/
 /app/node_modules
-client/asset-manifest.json client/index.html client/manifest.json client/robots.txt client/static
+client/asset-manifest.json 
+client/index.html 
+client/manifest.json 
+client/robots.txt 
+client/static
 gRPCserver/bin/
+client/*

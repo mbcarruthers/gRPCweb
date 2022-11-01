@@ -18,13 +18,14 @@ func NewEchoService() *EchoService {
 }
 func (e *EchoService) Echo(_ context.Context, req *pb.EchoRequest) (*pb.EchoResponse, error) {
 	log.Println("Echo server function called")
+
 	return &pb.EchoResponse{
 		Response: fmt.Sprintf("%s-pong\n", req.Request),
 	}, nil
 }
 
 const (
-	addr = "0.0.0.0:50051"
+	addr = "127.0.0.1:55051"
 )
 
 func main() {
