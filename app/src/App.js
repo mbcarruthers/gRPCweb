@@ -16,7 +16,7 @@ const App = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-2 outline align-items-center">
+                <div className="col-2 align-items-center outline">
                     <nav>
                         <ul className="list-unstyled list-group">
                             <li className="list-group-item m-2 text-center rounded">

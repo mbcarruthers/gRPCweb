@@ -30,6 +30,5 @@ html,body {
   border:none;
 }
 .outline {
-  border-radius:11px;
-  border:1px solid mediumvioletred;
+ border-radius:11px;
 }

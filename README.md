@@ -1,4 +1,4 @@
-Have protoc-gen-grpc and protoc-gen-grpc-go or whatever the latter is called installed. Whatever gives you an error trying to use `make build_protoc`.
+Prequisites:Docker installed, protoc installed , protoc-gen-go installed, and the web-grpc protoc generator installed.
 
 Project consists of essentially 4(ish) parts: 1) React front-end 
 						*including Web/* in src which containts javascript protocol buffers build from make. You can find the command with make or make help.
@@ -30,4 +30,4 @@ NOTE: MUST run docker container with --network=host, will not route correctly wi
 
 This needs to be cleaned up but it works and I am saving it for now.
 
-Dear god, as if just this did not take long enough.
+This is just a Boilerplate application to say, hey it works and this is how

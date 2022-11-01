@@ -20,7 +20,7 @@ const Home = () => {
                 return
             } else {
                 console.log(response.getResponse());
-                console.log(`\n ${response}`)
+                // console.log(`\n ${response}`)
                 return
             }
         })
