@@ -2,7 +2,7 @@
 
 ---
 
-Prequisites:Docker installed, protoc installed , protoc-gen-go installed, and protoc-gen-grpc-web as well.
+Pre-requisites:Docker installed, protoc installed , protoc-gen-go installed, and protoc-gen-grpc-web as well.
 
 ---
 
@@ -26,7 +26,9 @@ Project consists of essentially 4 parts:
 
 ### Running the code
 
-Considering the code is essentially made up of essentially four directories it's best to have a few terminal windows open. I preffered 1 terminal with 3 tabs and 2 IDE's,
+
+Considering the code is essentially made up of essentially four directories it's best to have a few terminal windows open. I preffered 1 terminal with 3 tabs and 2 IDE's
+(GoLand open in gRPCserver and WebStorm in the app). 
 
 First things first, you'll need to have protoc, protoc-gen-go, protoc-gen-go-grpc installed. The scope of installing those is beyond this and up to you. Those will need
 to be installed and added to you $PATH bash variable. You'll also need gin-gonic, and gin-gonic/contrib installed on the gin server code(located in the server directory).
