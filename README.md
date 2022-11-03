@@ -1,15 +1,30 @@
+## grpc-web example w/ Envoy sidecar Docker container 
+
+---
+
 Prequisites:Docker installed, protoc installed , protoc-gen-go installed, and the web-grpc protoc generator installed.
 
-Project consists of essentially 4(ish) parts: 1) React front-end 
+---
+
+### Contents 
 
 
-					      2) Gin backend serving running on port 30000 serving ReactJS front-end. Does not contain any protocol buffer code.
+Project consists of essentially 4(ish) parts: 
+
+1) React front-end 
 
 
-					      3) gRPCserver/server(the client in the gRPCserver directory was just there to test the gRPCserver/server
+2) Gin backend serving running on port 30000 serving ReactJS front-end. Does not contain any protocol buffer code.
 
 
-					      4) The Envoy directory(in gRPCserver) with the Dockerfile && envoy.yaml configuration file.
+3) gRPCserver/server(the client in the gRPCserver directory was just there to test the gRPCserver/server
+
+
+4) The Envoy directory(in gRPCserver) with the Dockerfile && envoy.yaml configuration file.
+
+---
+
+### Running the code
 
 1)open up terminal. open 3 tabs within in. 1 tab in gRPCserver/envoy, one tab in $ROOT/server, one tab in gRPCserver directory
 
