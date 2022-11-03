@@ -2,7 +2,7 @@
 
 ---
 
-Prequisites:Docker installed, protoc installed , protoc-gen-go installed, and the web-grpc protoc generator installed.
+Prequisites:Docker installed, protoc installed , protoc-gen-go installed, and protoc-gen-grpc-web as well.
 
 ---
 
@@ -32,7 +32,7 @@ Project consists of essentially 4(ish) parts:
  Run make commands to build go and web-grpc, so `make build_protoc` and `make build_protoc_grpc_web`.
 
 
-Build gRPCserver in tab#3, `make build_server`
+Build gRPCserver in terminal #3, `make build_server`
 
 
 In terminal #1(gRPCserver/envoy) run `sudo docker build . -t envoy_proxy`
