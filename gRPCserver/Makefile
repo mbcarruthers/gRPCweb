@@ -39,7 +39,7 @@ endif
 
 
 project := gRPCserver
-.PHONY =
+
 
 gRPCserver: $@help
 

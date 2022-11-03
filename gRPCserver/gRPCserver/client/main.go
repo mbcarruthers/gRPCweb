@@ -8,9 +8,12 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"log"
 )
-
+// NOTE: This code is only needed to test that the gRPCserver/server is working with solely gRPC, not grpc-web. Compilation of this code is not 
+// needed to run the gRPCserver project at all. Just kept it here for server verification in case you need to see if it's actually working standalone.
+//if you feel like you need it you should probobly just restart envoy container with `docker start -a ${CONTAINER_ID} instead so you can see what envoy is
+//doing internally.
 const (
-	addr = "localhost:50051"
+	addr = "127.0.0.1:55051"
 )
 
 func echoRequest(client pb.EchoServiceClient, req *pb.EchoRequest) {
