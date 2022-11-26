@@ -1,4 +1,4 @@
-## grpc-web example w/ Envoy sidecar Docker container 
+## grpc-web example w/ Envoy gRPC container
 
 ---
 
